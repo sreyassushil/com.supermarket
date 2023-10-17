@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Group execution]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.sevenrmartsupermarket.listeners.ExtentReporter"/>
+  </listeners>
+  <test parallel="tests" name="ExecutingSmokeTest(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sevenrmartsupermarket.tests.LoginTest">
+        <methods>
+          <include name="verifyStaffLogin"/>
+          <include name="verifyInvalidLoginScenario"/>
+        </methods>
+      </class> <!-- com.sevenrmartsupermarket.tests.LoginTest -->
+    </classes>
+  </test> <!-- ExecutingSmokeTest(failed) -->
+  <test parallel="tests" name="ExecutingSanityTest(failed)">
+    <groups>
+      <run>
+        <include name="SanityTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sevenrmartsupermarket.tests.AdminUsersTest">
+        <methods>
+          <include name="verifyNewAdminUser"/>
+        </methods>
+      </class> <!-- com.sevenrmartsupermarket.tests.AdminUsersTest -->
+      <class name="com.sevenrmartsupermarket.tests.LoginTest">
+        <methods>
+          <include name="verifyStaffLogin"/>
+        </methods>
+      </class> <!-- com.sevenrmartsupermarket.tests.LoginTest -->
+    </classes>
+  </test> <!-- ExecutingSanityTest(failed) -->
+</suite> <!-- Failed suite [Group execution] -->

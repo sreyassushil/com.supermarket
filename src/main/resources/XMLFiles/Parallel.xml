@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel execution" thread-count="5" parallel="tests">
+	<listeners>
+		<listener
+			class-name="com.sevenrmartsupermarket.listeners.ExtentReporter"></listener>
+	</listeners>
+	<test name="SmokeTest">
+		<classes>
+			<class name="com.sevenrmartsupermarket.tests.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="SanityTest">
+		<classes>
+			<class name="com.sevenrmartsupermarket.tests.LoginTest"></class>
+			<class name="com.sevenrmartsupermarket.tests.ManageOrdersTest"></class>
+			<class
+				name="com.sevenrmartsupermarket.tests.PushNotificationTest"></class>
+		</classes>
+	</test>
+</suite>

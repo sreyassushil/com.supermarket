@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel execution]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.sevenrmartsupermarket.listeners.ExtentReporter"/>
+  </listeners>
+  <test parallel="tests" name="AdminUsersTest(failed)">
+    <classes>
+      <class name="com.sevenrmartsupermarket.tests.AdminUsersTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="verifyDeactivateUser"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.sevenrmartsupermarket.tests.AdminUsersTest -->
+    </classes>
+  </test> <!-- AdminUsersTest(failed) -->
+</suite> <!-- Failed suite [Parallel execution] -->

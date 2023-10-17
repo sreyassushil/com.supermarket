@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-17T17:33:01Z" name="Default suite" finished-at="2023-10-17T17:33:06Z" duration-ms="4615">
+    <groups>
+    </groups>
+    <test started-at="2023-10-17T17:33:01Z" name="Default test" finished-at="2023-10-17T17:33:06Z" duration-ms="4615">
+      <class name="com.sevenrmartsupermarket.tests.ManageOrdersTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.ManageOrdersTest@2fb0623e]" started-at="2023-10-17T23:03:01Z" name="launchBrowser" finished-at="2023-10-17T23:03:04Z" duration-ms="2779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyDeletionStatus()[pri:0, instance:com.sevenrmartsupermarket.tests.ManageOrdersTest@2fb0623e]" started-at="2023-10-17T23:03:04Z" name="verifyDeletionStatus" finished-at="2023-10-17T23:03:06Z" duration-ms="1707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeletionStatus -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.ManageOrdersTest@2fb0623e]" started-at="2023-10-17T23:03:06Z" name="terminateSession" finished-at="2023-10-17T23:03:06Z" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeletionStatus status=SUCCESS method=ManageOrdersTest.verifyDeletionStatus()[pri:0, instance:com.sevenrmartsupermarket.tests.ManageOrdersTest@2fb0623e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.sevenrmartsupermarket.tests.ManageOrdersTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
